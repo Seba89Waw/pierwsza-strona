@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl-pl" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="description" content="html, css, tutorial" name="viewport" content="width=device-width, initial-scale=1">
+    <title>To jest tytuł</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="header">
+        <h1>
+            To jest nagłówek <span>pierwszego</span> rzędu
+        </h1>
+        <h2>O mnie</h2>
+        <h3>Moje projekty</h3>
+        <p id="section1">
+           przykładowy&nbsp;tekst<br>
+           kolejny przykładowy tekst<br>
+           H<sub>2</sub>O<sup>&trade;</sup>
+        </p>
+        <ol>
+          <li>Element 1</li>
+          <li>Element 2</li>
+          <li>Element 3</li>
+        </ol>
+        <ul>
+          <li>Element 1</li>
+          <li>Element 2</li>
+          <li>Element 3</li>
+        </ul>
+        <dl>
+          <dt>Pojęcie 1</dt>
+          <dd>Definicja pojęcia 1</dd>
+          <dt>Pojęcie 2</dt>
+          <dt>Pojęcie 3</dt>
+          <dd>Definicja pojęcia 2 i 3</dd>
+          <dt>Pojęcie 4</dt>
+          <dd>Pierwsza definicja pojęcia 4</dd>
+          <dd>Druga definicja pojęcia 4</dd>
+        </dl>
+        <ol>
+          <li>
+            Element 1
+            <ul>
+              <li>Podpunkt 1.1</li>
+              <li>Podpunkt 1.2</li>
+            </ul>
+          </li>
+          <li>Element 2</li>
+          <li>Element 3</li>
+        </ol>
+        <a href="http://www.coderslab.pl" target="_blank">Szkoła programowania</a><br>
+        <iframe src="http://www.coderslab.pl" width="350" height="351"></iframe><br>
+        <img id="jpg" src="images/coderslab_logo.png" alt="Logo CL" width="350" height="351">
+        <img id="jpg" src="images/ktos_usunal.png" alt="Logo CL" width="350" height="351" title="Coders lab">
+        <table border="1">
+          <tr>
+            <th></th>
+            <th scope="col">imię i nazwisko</th>
+            <th scope="col">miejsce urodzenia</th>
+            <th scope="col">rozpoczęcie działalności</th>
+          </tr>
+          <tr>
+            <th scope="row">Drake</th>
+            <td>Aubrey Drake Graham</td>
+            <td>Toronto</td>
+            <td>2001</td>
+          </tr>
+          <tr>
+            <th scope="row">Rihanna</th>
+            <td>Robyn Rihanna Fenty</td>
+            <td>Saint Michael</td>
+            <td>2005</td>
+          </tr>
+        </table>
+        <h3 class="header">Nagłówek to element blokowy</h3>
+          <a href="http://google.com">Link jest elementem liniowym</a>.
+          W jednej linii można wyświetlić <strong>wiele elementów liniowych</strong>.
+          <p>Paragraf jest elementem blokowym.</p>
+          <ul>
+            <li>Lista jest również elementem blokowym.</li>
+            <li>W elementach blokowych można umieszczać
+              <em>elementy liniowe.</em>
+            </li>
+          </ul>
+          <h3 id="smallHeader">Nagłówek z id</h3>
+          <a href="http://google.com" id="link">
+            Link również może mieć swój identyfikator
+          </a>
+          <p id="text">Paragraf z identyfikatorem</p>
+          <h3 class="smallHeader">Nagłówek z klasą</h3>
+          <a href="http://google.com" class="link text">
+            Ten link ma dwie klasy
+          </a>
+          <p class="text">
+            Paragraf ma tę samą klasę co powyższy link
+          </p>
+          <p id="section1">
+            Ten paragraf oznaczyłem za pomocą
+            identyfikatora section1. Będzie on
+            zmieniony za pomocą stylowania CSS.
+          </p>
+          <form>
+            <fieldset>
+              <legend>Twoje dane</legend>
+              <label>Wpisz swoje imię
+                <input type="text" name="name" placeholder="pierwsze imie durniu">
+              </label>
+              <label>Wpisz swoje nazwisko
+                <input type="text" name="surname">
+              </label>
+              <input type="submit" value="Wyślij">
+            </fieldset>
+            <fieldset>
+              <legend>checkboxy</legend>
+              <label>Wyrażam zgodę
+                <input type="checkbox" name="agreement">
+              </label>
+              <br>
+              <label>Zamawiam produkt
+                <input type="checkbox" name="orderproduct" checked>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Wybierz preferowane miejsce (mozemy zaznaczyc tylko jedno)</legend>
+                <label>Przy oknie
+                  <input type="radio" name="seats" value="window">
+                </label><br>
+                <label>Przy korytarzu
+                  <input type="radio" name="seats" value="corridor">
+                </label>
+            </fieldset>
+            <fieldset>
+              <legend>Twoje Uwagi</legend>
+              <label>
+                  500 znaków
+                  <textarea cols="50" rows="10"></textarea>
+              </label>
+              <input type="submit" value="Zapisz">
+            </fieldset>
+          </form>
+        </div>
+  </body>
+</html>
